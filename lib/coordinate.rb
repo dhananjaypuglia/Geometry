@@ -1,5 +1,5 @@
 #To store coordinates
-class Coordinates
+class Coordinate
   def initialize(x, y)
     @x = x
     @y = y
