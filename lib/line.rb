@@ -13,7 +13,9 @@ class Line
   def equal?(line)
     self.object_id==line.object_id
   end
-
+  def length
+   Math.sqrt((@coordinate2.get_x-@coordinate1.get_x)**2+(@coordinate2.get_y-@coordinate1.get_y)**2)
+  end
   def ==(line)
     coordinates==line.coordinates||[@coordinate2,@coordinate1]==line.coordinates
    # (@coordinate1.get_x == line.coordinates.get_x && @coordinate1.get_y == line.coordinates.get_y)

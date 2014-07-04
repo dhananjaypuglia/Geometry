@@ -27,4 +27,9 @@ describe Line do
     expect(line1.equal?(line1)).to eq(true)
 
   end
+
+  it 'should return the length for the coordinates 1,2 and 5,2' do
+    line1 = Line.new(Coordinates.new(1,2), Coordinates.new(5,2))
+    expect(line1.length).to eq(4)
+  end
 end
