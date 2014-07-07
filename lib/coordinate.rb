@@ -20,13 +20,14 @@ class Coordinate
 
 
   def ==(coodinates)
-    [@x, @y]==coodinates.get
+    [@x, @y] == coodinates.get
   end
 
-def eql?(other)
-  self==other
-end
+  def eql?(other)
+    self == other
+  end
+
   def hash
-    [@x,@y].hash
+    [@x, @y].hash
   end
 end
