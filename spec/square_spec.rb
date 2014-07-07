@@ -6,7 +6,7 @@ describe Square do
     top_left_x = 0
     top_left_y = 0
     side = 3
-    square = Square.new(Coordinate.new(0,0),side)
+    square = Rectangle.square(Coordinate.new(0,0),side)
     expect(square.area).to eq(9)
 
   end
