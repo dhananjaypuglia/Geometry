@@ -29,7 +29,7 @@ describe Line do
   end
 
   it 'should return the length for the coordinates 1,2 and 5,2' do
-    line1 = Line.new(Coordinate.new(1,2), Coordinate.new(5,2))
+    line1 = Line.new(Coordinate.new(1, 2), Coordinate.new(5, 2))
     expect(line1.length).to eq(4)
   end
 end
